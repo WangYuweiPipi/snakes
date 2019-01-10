@@ -35,12 +35,12 @@ public class Snake {
                 body.removeLast();
                 break;
             case UP:
-                newNode = new Node(head.getX(),head.getY() + 1);
+                newNode = new Node(head.getX(),head.getY() - 1);
                 body.addFirst(newNode);
                 body.removeLast();
                 break;
             case DOWN:
-                newNode = new Node(head.getX(),head.getY() - 1);
+                newNode = new Node(head.getX(),head.getY() + 1);
                 body.addFirst(newNode);
                 body.removeLast();
                 break;

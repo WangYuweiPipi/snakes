@@ -52,13 +52,13 @@ public class GameControl implements Runnable, KeyListener {
         // 获取键盘键值
         int keyCode = e.getKeyCode();
         if (keyCode == KeyEvent.VK_UP){
-            grid.changeDirection(Direction.DOWN);
+            grid.changeDirection(Direction.UP);
         }else if (keyCode == KeyEvent.VK_LEFT){
             grid.changeDirection(Direction.LEFT);
         }else if (keyCode == KeyEvent.VK_RIGHT){
             grid.changeDirection(Direction.RIGHT);
         }else if (keyCode == KeyEvent.VK_DOWN){
-            grid.changeDirection(Direction.UP);
+            grid.changeDirection(Direction.DOWN);
         }
 
         if (grid.nextRound()) {
