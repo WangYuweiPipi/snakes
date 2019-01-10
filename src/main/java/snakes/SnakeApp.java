@@ -10,6 +10,14 @@ public class SnakeApp extends JFrame {
 
     private GameDraw gameDraw;
 
+
+    public static void main(String[] args) {
+        SnakeApp snakeApp = new SnakeApp();
+
+        snakeApp.init();
+    }
+
+
     public void init() {
 
         try {
@@ -48,10 +56,6 @@ public class SnakeApp extends JFrame {
         }
     }
 
-    public static void main(String[] args) {
-        SnakeApp snakeApp = new SnakeApp();
 
-        snakeApp.init();
-    }
 
 }
